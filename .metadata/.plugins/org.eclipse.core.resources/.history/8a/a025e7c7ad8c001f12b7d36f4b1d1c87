@@ -1,0 +1,53 @@
+package com.image.Upload.ImageUpload.SERVICE;
+
+import java.util.List;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+
+import com.image.Upload.ImageUpload.DAO.ImageDao;
+import com.image.Upload.ImageUpload.ENTITY.Image;
+
+@Service
+public class ImageService {
+	@Autowired
+	private ImageDao dao;
+
+	public Image saveImage(Image image) {
+		return dao.saveImage(image);
+	}
+
+	public List<Image> getAll() {
+		return dao.getAll();
+	}
+
+	public Image getId(int id) {
+		return dao.getById(id);
+	}
+
+	public Image getName(String name) {
+		return dao.getByName(name);
+	}
+
+	public Image deleteAccount(int id) {
+		Image image = dao.getById(id);
+		if (image != null) {
+			dao.deleteAccount(id);
+			return image;
+		} else {
+			return null;
+		}
+	}
+
+	public Image updateImage(int id, Image image) {
+		Image picture = dao.getById(id);
+		if (picture != null) {
+			picture.setFileName(image.getFileName());
+			picture.setFilePath(image.getFilePath());
+			picture.setImageData(image.getImageData());
+			return dao.saveImage(picture);
+		} else {
+			return null;
+		}
+	}
+}

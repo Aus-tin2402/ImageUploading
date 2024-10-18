@@ -1,0 +1,5 @@
+package com.image.Upload.ImageUpload.SERVICE;
+
+public class ImageService {
+
+}

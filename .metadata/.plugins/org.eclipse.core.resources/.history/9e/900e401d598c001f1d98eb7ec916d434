@@ -1,0 +1,5 @@
+package com.image.Upload.ImageUpload.REPOSITORY;
+
+public interface ImageRepository {
+
+}
