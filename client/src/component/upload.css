@@ -1,0 +1,56 @@
+/* Styles for the Upload component */
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Full viewport height */
+    background-color: #deecdd; /* Light background color */
+}
+
+.sub-container {
+    background-color: #fff; /* White background for the form */
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    padding: 20px;
+    width: 600px; /* Fixed width for the form */
+}
+
+.input-group-feild {
+    margin-bottom: 15px; /* Space between input fields */
+}
+
+label {
+    font-weight: bold;
+    display: block; /* Block display for labels */
+    margin-bottom: 5px; /* Space below the label */
+}
+
+input[type="file"] {
+    width: 100%; /* Full width for input */
+    padding: 10px;
+    border: 1px solid #ddd; /* Light border */
+    border-radius: 4px; /* Rounded corners */
+}
+
+.button {
+    text-align: center; /* Center the button */
+}
+
+button {
+    background-color: #4CAF50; /* Green background */
+    color: white; /* White text color */
+    border: none; /* No border */
+    padding: 10px 15px; /* Padding for the button */
+    border-radius: 4px; /* Rounded corners */
+    cursor: pointer; /* Pointer cursor on hover */
+    transition: background-color 0.3s; /* Smooth background transition */
+}
+
+button:hover {
+    background-color: #45a049; /* Darker green on hover */
+}
+
+p {
+    margin-top: 20px; /* Space above message */
+    color: #333; /* Dark text color */
+}

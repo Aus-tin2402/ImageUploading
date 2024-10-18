@@ -1,0 +1,48 @@
+/* Styles for the FetchAll component */
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    background-color: #deecdd; /* Light background color */
+    min-height: 100vh; /* Full viewport height */
+}
+
+h1 {
+    margin-bottom: 20px; /* Space below the title */
+    font-size: 2em; /* Larger font size for the title */
+    color: #333; /* Dark text color */
+}
+
+.image-gallery {
+    display: grid; /* Use grid layout for the gallery */
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); /* Responsive columns */
+    gap: 20px; /* Space between the cards */
+    width: 100%; /* Full width */
+    max-width: 1200px; /* Max width for the gallery */
+}
+
+.image-card {
+    background-color: #fff; /* White background for each card */
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    overflow: hidden; /* Hide overflow */
+    text-align: center; /* Center text inside the card */
+    transition: transform 0.3s; /* Smooth transform transition */
+}
+
+.image-card:hover {
+    transform: scale(1.05); /* Scale up on hover */
+}
+
+.image-card img {
+    width: 100%; /* Full width for images */
+    height: 150px; /* Fixed height for images */
+    object-fit: cover; /* Cover to maintain aspect ratio */
+}
+
+.image-card p {
+    padding: 10px; /* Padding for text */
+    color: #666; /* Lighter text color for the description */
+    font-size: 0.9em; /* Slightly smaller font size */
+}

@@ -1,0 +1,64 @@
+/* Styles for the FetchId component */
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    background-color: #deecdd; /* Light background color */
+    min-height: 100vh; /* Full viewport height */
+}
+
+.sub-container {
+    background-color: #fff; /* White background for form area */
+    padding: 20px; /* Padding for form */
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    width: 100%;
+    max-width: 400px; /* Maximum width for form */
+    text-align: center; /* Center text */
+}
+
+.input-group-feild {
+    margin-bottom: 15px; /* Space between input fields */
+}
+
+input[type="text"] {
+    width: 100%; /* Full width input */
+    padding: 10px; /* Padding inside input */
+    border: 1px solid #ccc; /* Border color */
+    border-radius: 4px; /* Rounded corners for input */
+    font-size: 1em; /* Font size */
+}
+
+.button {
+    margin-top: 10px; /* Space above button */
+}
+
+button {
+    background-color: #4caf50; /* Green background */
+    color: white; /* White text color */
+    border: none; /* No border */
+    border-radius: 4px; /* Rounded corners */
+    padding: 10px 15px; /* Padding for button */
+    cursor: pointer; /* Pointer cursor on hover */
+    font-size: 1em; /* Font size */
+    transition: background-color 0.3s; /* Transition for hover effect */
+}
+
+button:hover {
+    background-color: #45a049; /* Darker green on hover */
+}
+
+img {
+    margin-top: 20px; /* Space above image */
+    max-width: 100%; /* Responsive image */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 8px; /* Rounded corners for image */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow around image */
+}
+
+p {
+    margin: 10px 0; /* Margin above and below message */
+    color: #666; /* Lighter text color for the message */
+    font-size: 1em; /* Font size for message */
+}
